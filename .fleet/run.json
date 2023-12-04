@@ -1,0 +1,43 @@
+{
+    "configurations": [
+        {
+            "name": "Build",
+            "type": "jps-build",
+            "workingDir": "D:\\projects\\AdventOfCode",
+            "module": "AdventOfCode",
+            "includeTests": false
+        },
+        {
+            "name": "Day4Kt",
+            "type": "jps-run",
+            "workingDir": "D:\\projects\\AdventOfCode",
+            "dependsOn": [
+                "Build"
+            ],
+            "mainClass": "Day4Kt",
+            "module": "AdventOfCode",
+            "options": [
+                "-Dfile.encoding=UTF-8",
+                "-Dsun.stdout.encoding=UTF-8",
+                "-Dsun.stderr.encoding=UTF-8",
+                "@C:\\Users\\andre\\AppData\\Local\\Temp\\idea_arg_file699357124"
+            ]
+        },
+        {
+            "name": "Day5Kt",
+            "type": "jps-run",
+            "workingDir": "D:\\projects\\AdventOfCode",
+            "dependsOn": [
+                "Build"
+            ],
+            "mainClass": "Day5Kt",
+            "module": "AdventOfCode",
+            "options": [
+                "-Dfile.encoding=UTF-8",
+                "-Dsun.stdout.encoding=UTF-8",
+                "-Dsun.stderr.encoding=UTF-8",
+                "@C:\\Users\\andre\\AppData\\Local\\Temp\\idea_arg_file726887974"
+            ]
+        }
+    ]
+}
