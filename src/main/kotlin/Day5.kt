@@ -9,18 +9,17 @@ fun main() {
 
 private fun puzzle1(input: List<String>): Long {
     val seeds = input
-            .asSequence()
-            .filter { it.startsWith("seeds:") }
-            .map { it.split(" ") }
-            .flatten()
-            .filterNot { it == "seeds:" }
-            .map { it.toLong() }
-            .toList()
+        .asSequence()
+        .filter { it.startsWith("seeds:") }
+        .map { it.split(" ") }
+        .flatten()
+        .filterNot { it == "seeds:" }
+        .map { it.toLong() }
+        .toList()
 
     val mappings = createMappings(input)
-    val minLocation = findMinLocation(seeds, mappings)
 
-    return minLocation
+    return findMinLocation(seeds, mappings)
 }
 
 private fun puzzle2(input: List<String>): Long {
